@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+:root{
+    --bg-color: white ; 
+    --text-color: black ; 
+    --font-family: "Inter", "Montserrat";
+    --secondary-color: #EDFEF6 ; 
+    --terciary-color:#057858;
+    --footer-color: #202938;
+    --btn-color: #F3F4F6 ; 
+    --btn-colorOK: #0CB981;
+    --btn-color-don: #DB2728 ;
+
+}
+
+body{
+    background-color: var(--bg-color);
+    color:var(--text-color);
+    font-family: var(--font-family);
+    width: 100%;
+    margin: auto;
+}
+header{
+    display: flex;
+    max-height: 60px;
+    background-color: var(--terciary-color);
+    color: white; 
+    padding: 5px;
+    margin: auto;
+}
+nav{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 738px;
+    color: white;
+}
+.logo{
+    display: inline-flex;
+
+}
+.menu{
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 16px;
+
+}
+.menu a{
+    color: white; 
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 40px;
+}
+.btn_nav{
+    background-color: var(--btn-color-don);
+    color: white;
+    border-radius: 10%;
+    border: none;
+    cursor:pointer;
+}
+.icon_heart{
+    width: 20px;
+    height: 17px;
+    
+}
+.texte_Accueil{
+    align-content: center;
+    position: absolute;
+    justify-content: center;
+
+
+}
+.imgHautdePage{
+    position: relative;
+
+}
+.h1{
+    font-size: 64px;
+    color: white;
+    font-weight: bold;
+
+}
+.intro{
+    font-size: 28px;
+    color: white;
+    font-weight: 400;
+}
+
