@@ -89,11 +89,11 @@
         <section class="histoire">
             <h2>Histoire de Réussite</h2>
             <div class="grand_img">
-            <div>
                 <img class="luna" src="Assets/luna.png" alt="Luna">
-                <h3 class="texte_galerie">Luna</h3>
-                <p class="texte_galerie">Trouvée dans la rue avec une patte cassée, Luna a été soignée et retrouvé sa joie de vivre. Elle coule maintenant  des jours heureux dans sa nouvelle famille. </p>
-            </div>
+                <div class="hisLune">
+                <p class="texte_galerie"><span>Luna </span><br>
+            Trouvée dans la rue avec une patte cassée, Luna a été soignée et retrouvé sa joie de vivre. Elle coule maintenant  des jours heureux dans sa nouvelle famille.</p>
+                </div>
             </div>
             <div>
                 <img src="Assets/lunita.png" alt="miniature_Animaux_rescates">
@@ -101,84 +101,114 @@
                 <img src="Assets/max.png" alt="Max">
             </div>
         </section>
-        <section>
+        <section class="quizimpact">
             <h2>Testez Vos Connaissances</h2>
-            <div>
-                <p>Les associations gardent la majorité des dons pour leur fonctionnement</p>
-                <div>
-                <p>Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement
-                </p>
-            </div>
-                <div>
-                    <p>Faux</p>
+            <div class="quiz">
+                <div class="question">
+                    <p class="quizquestion">Les associations gardent la majorité des dons pour leur fonctionnement</p>
+                    <div class="reponse">
+                        <div class="vrai">
+                        <p>Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement
+                        </p>
+                        </div>
+                    <div class="faux">
+                        <p>Faux</p>
+                    </div>
                 </div>
             </div>
-            <div>
-                <p>Les refuges prennent que les animaux en bonne santé</p>
-                <div>
-                    <p>Vrai, ils refusent les animaux malades car c’est trop coûteux</p>
-                </div>
-                <div>
-                    <p>Faux</p>
-                </div>
-            </div>
-            <div>
-                <p>Les associations ont trop de moyens grâce aux dons</p>
-                <div>
-                    <p>Vrai, elles reçoivent  beaucoup d’argent des donateurs</p>
-                </div>
-                <div>
-                    <p>Faux</p>
+            <div class="question">
+                <p class="quizquestion"></p>Les refuges prennent que les animaux en bonne santé</p>
+                <div class="reponse">
+                    <div class="vrai">
+                        <p>Vrai, ils refusent les animaux malades car c’est trop coûteux</p>
+                    </div>
+                    <div class="faux">
+                        <p>Faux</p>
+                    </div>
                 </div>
             </div>
-        <div>
-            <h2>Notre Impact</h2>
-        <div class=""> <img src="Assets/Icons/refuge_icon.png" alt="Refuges_icon"><br>
-        <p><span>50+ Refuges</span> <br>
+            <div class="question">
+                <p class="quizquestion"></p>Les associations ont trop de moyens grâce aux dons</p>
+                <div class="reponse">
+                    <div class="vrai">
+                        <p>Vrai, elles reçoivent  beaucoup d’argent des donateurs</p>
+                    </div>
+                    <div class="faux">
+                        <p>Faux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <h2 class="titreImpact">Notre Impact</h2>
+            <div class="impact">
+        <div class="items"> <img src="Assets/Icons/refuge_icon.png" alt="Refuges_icon"><br>
+        <p><span class="highlight">50+ Refuges</span>
+            <br>
+            <br>
         Partenaires à travers la France</p>
-    </div>
-        <div class=""> <img src="Assets/Icons/refuge_icon.png" alt="logo icon"><br>
-        <p><span>1000+ Animaux </span><br>
+        </div>
+        <div class="items"> <img class="logo_vert" src="Assets/Icons/logo_vert.png" alt="logo icon">
+            <br>
+        <p><span class="highlight">1000+ Animaux </span>
+            <br>
+            <br>
             Sauvés chaque année</p>
         </div>
-        <div class=""> <img src="Assets/Icons/repas_icon.png" alt="repas_icon">
-            <p> <span>10 000+Repas</span> <br>
+        <div class="items"> <img src="Assets/Icons/repas_icon.png" alt="repas_icon">
+            <p> <span class="highlight">10 000+Repas</span>
+                <br>
+                <br>
             Distribués par mois</p>
         </div>
         </div>
         </section>
-        <section>
-            <h2>Témoignages</h2>
+        <section class="temoignages">
+            <h2 class="titretemo">Témoignages</h2>
+            <div class="container_Temo">
             <div>
                 <img src="Assets/temoignage_lyon.png" alt="lyon">
+                <br>
+                <br>
                 <p>“Grâce aux dons, nous avons pu accueillir plus de 200 animaux cette année et leur offrir une seconde chance.” <br>
-                <span>Refuge des Quatre Pattes - Lyon</span>
+                    <br>
+                    <br>
+                <span class="refuge">Refuge des Quatre Pattes - Lyon</span>
                 </p>
             </div>
             <div>
                 <img src="Assets/temoignage_marseille.png" alt="Marseille">
+                <br>
+                <br>
                 <p>
                     “Le soutien de Quatre Pattes nous permet de maintenir notre mission de protection des animaux sauvages en détresse.” <br>
-                    <span>Sanctuaire Animal - Marseille</span>
+                    <br>
+                    <span class="refuge">Sanctuaire Animal - Marseille</span>
                 </p>
             </div>
             <div>
                 <img src="Assets/temoignage_paris.png" alt="Paris">
+                <br>
+                <br>
                 <p>
-                    “Chaque don compte et nous aide à offrir un avenir meilleur aux animaux abandonnés.”<br>
-                    <span>Refuge du Soléil - Paris</span>
+                    “Chaque don compte et nous aide à offrir un avenir meilleur aux animaux abandonnés.”
+                    <br>
+                    <br>
+                    <br>
+                    <span class="refuge">Refuge du Soléil - Paris</span>
                 </p>
             </div>
-        </section>
-        <footer>
-            <div><ul>
-                <li><a href="#">Quatre Pattes </a></li>
-                    <p></p>
-                <li>Contact</li>
-                    <address> <img src="Assets/Icons/logo_mail.png" alt="e-mail">contact@quatrepattes.org</address>
-                <li> <a href="">Suive-moi</a></li>
-            </ul>
         </div>
+        </section>
+        <footer class="footer">
+                <li class="menu_footer"><a href="#">Quatre Pattes</a>
+                    <p>Ensemble, protégeons les animaux et donnons-leur  une vie meilleure</p>
+                </li>
+                <li class="menu_footer">Contact
+                    <address> <img src="Assets/Icons/logo_mail.png" alt="e-mail">contact@quatrepattes.org</address>
+                </li>
+                <li class="menu_footer">
+                <a href="">Suive-moi</a>
+            </li>
         </footer>
     </main>
 <script src="script.js"></script>
