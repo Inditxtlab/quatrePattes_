@@ -26,23 +26,30 @@ body{
     margin: auto;
 }
 header{
-    display: flex;
     max-height: 60px;
     background-color: var(--terciary-color);
     color: white; 
     padding: 5px;
-    margin: auto;
 }
 nav{ 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 738px;
+    gap: 700px;
     color: white;
 }
 .logo{
-    display: inline-flex;
+    display: flex;
+    height: 60px;
+    width: 263px;
+    gap: 5px;
+    align-items: center;
 
+}
+.home_logo{
+    font-size: 28px;
+    font-weight: bold;
+    width: 211px;
 }
 .menu{
     display: inline-flex;
@@ -59,35 +66,50 @@ ul{
     list-style: none;
     display: inline-flex;
     gap: 40px;
+    align-items: center;
 }
 .btn_nav{
     background-color: var(--btn-color-don);
     color: white;
-    border-radius: 10%;
+    border-radius: 10px;
     border: none;
     cursor:pointer;
+    width: 163px;
+    height: 42px;
+    font-size: 16px;
 }
 .icon_heart{
     width: 20px;
     height: 17px;
     
 }
+.hero{
+    display: flex;
+}
 .texte_Accueil{
-    align-content: center;
     position: absolute;
     justify-content: center;
-
+    text-align: center;
+    align-items: center;
+    height: 168px;
+    width: 902px;
 
 }
+
 .imgHautdePage{
     position: relative;
+    width: 100%
 
 }
-.h1{
+h1{
     font-size: 64px;
     color: white;
     font-weight: bold;
 
+}
+p, li{
+    font-size: 16px;
+    font-weight: 400;
 }
 .intro{
     font-size: 28px;
@@ -95,3 +117,115 @@ ul{
     font-weight: 400;
 }
 
+.donations{
+    display: flex;
+    height: 610px;
+}
+
+h2{
+    font-size: 34px;
+    text-align: center;
+}
+
+.container_dons{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 964px;
+    height: 392px;
+
+}
+.description_dons{
+    width: 284px;
+    height: 134px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 20px;
+
+}
+.valeurDon{
+    font-weight: bolder;
+    color: black;
+    font-size: 30px;
+}
+.expli_Don{
+    color: #67696D;
+}
+.container_btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.btns_dons{
+    height: 44px;
+    width: 94px;
+    background-color: #F3F4F6;
+    border: none;
+    border-radius: 10px;
+    color: var(--footer-color);
+    font-size: 18px;
+    text-justify: center;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.btn_vert{
+    background-color:var(--btn-colorOK);
+    color: white;
+}
+.container_btn_rouge{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.btn_don_red{
+    background-color: var(--btn-color-don);
+    color: white;
+    width: 892px;
+    height: 55px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.mission{
+    background-color: var(--secondary-color);
+    height: 592px;
+    padding: 40px;
+}
+.mission1{
+    display: flex;
+    align-items: center;
+}
+.img_mission{
+    width: 690px;
+    height: 454px;
+}
+.titreMission{
+    text-align: left;
+
+}
+.texte_mission{
+    width: 50%;
+    height: 454px;
+    background-color: var(--bg-color);
+    padding: 10px;
+    justify-content: center;
+
+}
+.histoire{
+    display: grid;
+    height: 820px;
+    width: 1233px;
+    grid-area: "i1 i1 i1"}
+
+.grand_img{
+    position: relative;
+
+}
+
+.texte_galerie{
+    position:absolute;
+}
