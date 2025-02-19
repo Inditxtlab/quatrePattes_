@@ -18,27 +18,28 @@
             <header>
                 <nav>
                     <div class="logo">
+                        <a href="home.html">
                     <img src="Assets/Icons/logo-icon.png" alt="logo quatre pattes">
                     <h1 class="home_logo">Quatre Pattes</h1>
+                    </a>
                     </div>
                     <div class="menu">
                     <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="home.html">Accueil</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li> <button class="btn_nav"> <img class="icon_heart"src="Assets/Icons/logo_coeur.png"> Faire un don</button>
                         </li>
                     </ul>
                 </div>
                 </nav>
             </header>
-            <div class="hero">
-                <img class="imgHautdePage" src="Assets/image huatpage.png" alt="Image d'accueil">
+        </section>
+        <section class="hero">
                 <div class="texte_Accueil">
                 <h1 class="title">Protégeons-les-Ensemble</h1>
             <p class="intro">Chaque don compte pour leur offrir une vie meilleure </p>
-            </div>
-        </div>
-        </section>
+                </div>
+    </section>
         <section id="Donations">
             <h2>Faites un don</h2>
             <div class="container_dons">
@@ -58,7 +59,7 @@
                 <div class="container_btns">
                     <button class="btns_dons">Une fois
                     </button>
-                    <button class="btns_dons btn_vert">Mensuel
+                    <button class="btns_dons">Mensuel
                     </button>
                     <button class="btns_dons">Annuel
                     </button>
@@ -69,17 +70,18 @@
             </div>
         </section>
         <section class="mission">
-            <div class="mission1">
-                <div><img class="img_mission"src="Assets/notre mission.avif" alt="Notre Mission">
+            <div class="mission_container">
+                <div class="imgcontain">
             </div>
             <div class="texte_mission">
                 <h2 class="titreMission">Notre Mission</h2>
                 <br>
-                <br>
                 <p class="p_mission">Depuis 2010, Quatre Pattes œuvre sans relâche pour la protection et le bien etre des animaux en France.  Notre mission est double: secourir les animaux en détresse et sensibiliser le public à la cause animale. 
                     <br>
                     <br>
+                    <br>
                     Chaque année, nous prenons en charge plus de 1000 animaux abandonnés, maltraités ou blessés. Grâce à notre réseau de familles d’accueil et nos partenariats avec des refuges, nous leur offrons une seconde chance. 
+                    <br>
                     <br>
                     <br>
                     Votre soutien est essentiel pour continuer notre mission. Ensemble, nous pouvons faire la différence pour ces êtres aui comptent sur nous</p>
@@ -89,17 +91,22 @@
         <section class="histoire">
             <h2>Histoire de Réussite</h2>
             <div class="grand_img">
-                <img class="luna" src="Assets/luna.png" alt="Luna">
                 <div class="hisLune">
-                <p class="texte_galerie"><span>Luna </span><br>
+                <p>
+                    <span class="texte_galerie">Luna </span>
+                    <br>
+                    <br>
             Trouvée dans la rue avec une patte cassée, Luna a été soignée et retrouvé sa joie de vivre. Elle coule maintenant  des jours heureux dans sa nouvelle famille.</p>
                 </div>
             </div>
-            <div>
-                <img src="Assets/lunita.png" alt="miniature_Animaux_rescates">
-                <img src="Assets/oscar.png" alt="Oscar">
-                <img src="Assets/max.png" alt="Max">
-            </div>
+            <div class="miniatures">
+                <img  class= "img_div1" src="Assets/miniluna.png" alt="luna">
+                <p class="prenom_1">Luna</p>
+                <img class= "img_div2" src="Assets/oscar.png" alt="Oscar">
+                <p class="prenom_2">Oscar</p>
+                <img class= "img_div3" src="Assets/max.png" alt="max">
+                <p class="prenom_3">Max</p>
+               </div>
         </section>
         <section class="quizimpact">
             <h2>Testez Vos Connaissances</h2>
@@ -166,30 +173,30 @@
             <h2 class="titretemo">Témoignages</h2>
             <div class="container_Temo">
             <div>
-                <img src="Assets/temoignage_lyon.png" alt="lyon">
+                <img class="temo_img" src="Assets/temo_lyon.png" alt="lyon">
                 <br>
                 <br>
-                <p>“Grâce aux dons, nous avons pu accueillir plus de 200 animaux cette année et leur offrir une seconde chance.” <br>
+                <p class="p_lyon">“Grâce aux dons, nous avons pu accueillir plus de 200 animaux cette année et leur offrir une seconde chance.” <br>
                     <br>
                     <br>
                 <span class="refuge">Refuge des Quatre Pattes - Lyon</span>
                 </p>
             </div>
             <div>
-                <img src="Assets/temoignage_marseille.png" alt="Marseille">
+                <img class="temo_img" src="Assets/temo_marseille.png" alt="Marseille">
                 <br>
                 <br>
-                <p>
+                <p class="p_marseille">
                     “Le soutien de Quatre Pattes nous permet de maintenir notre mission de protection des animaux sauvages en détresse.” <br>
                     <br>
                     <span class="refuge">Sanctuaire Animal - Marseille</span>
                 </p>
             </div>
             <div>
-                <img src="Assets/temoignage_paris.png" alt="Paris">
+                <img class="temo_img" src="Assets/temo_paris.png" alt="Paris">
                 <br>
                 <br>
-                <p>
+                <p class="p_paris">
                     “Chaque don compte et nous aide à offrir un avenir meilleur aux animaux abandonnés.”
                     <br>
                     <br>
@@ -201,16 +208,22 @@
         </section>
         <footer class="footer">
                 <li class="menu_footer"><a href="#">Quatre Pattes</a>
+                    <br>
+                    <br>
                     <p>Ensemble, protégeons les animaux et donnons-leur  une vie meilleure</p>
                 </li>
                 <li class="menu_footer">Contact
-                    <address> <img src="Assets/Icons/logo_mail.png" alt="e-mail">contact@quatrepattes.org</address>
+                    <address>
+                        <br>
+                        <img src="Assets/Icons/logo_mail.png" alt="e-mail">
+                         contact@quatrepattes.org
+                    </address>
                 </li>
                 <li class="menu_footer">
                 <a href="">Suive-moi</a>
             </li>
         </footer>
     </main>
-<script src="script.js"></script>
+<script src=""></script>
 </body>
 </html>
