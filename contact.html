@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Association Quatre Pattes </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+                <nav>
+                    <div class="logo">
+                        <a href="home.html">
+                    <img src="Assets/Icons/logo-icon.png" alt="logo quatre pattes">
+                    <h1 class="home_logo">Quatre Pattes</h1>
+                    </a>
+                    </div>
+                    <div class="menu">
+                    <ul>
+                        <li><a href="home.html">Accueil</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <a href="#Donations"><button class="btn_nav"> <img class="icon_heart"src="Assets/Icons/logo_coeur.png"> Faire un don</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </nav>
+        </header>
+        <br>
+        <section class="contact">
+            <br>
+            <h2>Contacte nous</h2>
+            <br>
+            <div class="form_container">
+        <form id=formulaire>
+            <label for="Nom">Nom : </label>
+            <br>
+            <input id=inp1 type="text">
+            <div id="nom_erreur" class="error"></div>
+            <br>
+            <br>
+            <br>
+            <label for="mail">E-mail : </label>
+            <br>
+           <input id="inp2" type="email" name="email" id="email">
+           <div id="mail_erreur" class="error"></div>
+           <br>
+           <br>
+           <br>
+            <label for="Sujet">Sujets : </label>
+            <br>
+            <select id="sujets" name="Sujets" id="sujets">
+                <option value="Faire un don">Faire un don</option>
+                <option value="Devenir benevole">Devenir bénévole</option>
+                <option value="Questions">Questions Générales</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="Message">Message : </label>
+            <br>
+            <div id="msg_erreur" class="error"></div>
+            <textarea name="txtarea" id="message" row= 10 col=60 placeholder="Bonjour, je voudrais info sur..."></textarea>
+            <br>
+            <br>
+            <input id="btnenvoyer" type="submit" value="Envoyer">
+        </form>
+        </div>
+    </section>
+<footer class="footer">
+                <li class="menu_footer"><a href="#">Quatre Pattes</a>
+                    <p>Ensemble, protégeons les animaux et donnons-leur  une vie meilleure</p>
+                </li>
+                <li class="menu_footer">Contact
+                    <address> <img src="Assets/Icons/logo_mail.png" alt="e-mail">contact@quatrepattes.org</address>
+                </li>
+                <li class="menu_footer">
+                <a href="">Suive-moi</a>
+            </li>
+</footer>
+</main>
+<script src="formulaire.js"></script>
+</body>
+</html>
