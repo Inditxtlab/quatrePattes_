@@ -43,29 +43,29 @@
         <section id="Donations">
             <h2>Faites un don</h2>
             <div class="container_dons">
-                <div class="description_dons">
+                <div id="don10" class="description_dons">
                     <p> <span class="valeurDon">10€</span><br>
                     <span class="expli_Don">permet de nourrir 5 animaux pendant  une journée</span></p>
                 </div>
-                <div class="description_dons"
+                <div id="don20" class="description_dons"
                 ><p><span class="valeurDon">20€ </span><br>
                 <span class="expli_Don">permet d’héberger un animal sauvage pendant une nuit</span></p>
                 </div>
-                <div  class="description_dons" >
+                <div id="don30"  class="description_dons" >
                     <p><span class="valeurDon">50€</span><br>
                     <span class="expli_Don">permet de financer les soins vétérinaires complets pour un animal</span></p>
                 </div>
             </div>
                 <div class="container_btns">
-                    <button class="btns_dons">Une fois
+                    <button id="btn1" class="btns_dons">Une fois
                     </button>
-                    <button class="btns_dons">Mensuel
+                    <button id="btn2" class="btns_dons">Mensuel
                     </button>
-                    <button class="btns_dons">Annuel
+                    <button id="btn3" class="btns_dons">Annuel
                     </button>
                 </div>
-                <div class="container_btn_rouge">
-                    <button class="btns_dons btn_don_red"><img class="icon_heart" src="Assets/Icons/logo_coeur.png"> Faire un don de 50€/mois</button>
+                <div id="btnaffichage" class="container_btn_rouge">
+                    <button class="btns_dons btn_don_red"><img class="icon_heart" src="Assets/Icons/logo_coeur.png"> Faire un don de <span id="montant">50€</span>/ <span id="frequence">mois</span></button>
                 </div>
             </div>
         </section>
@@ -100,12 +100,18 @@
                 </div>
             </div>
             <div class="miniatures">
+                <div class="div1">
                 <img  class= "img_div1" src="Assets/miniluna.png" alt="luna">
                 <p class="prenom_1">Luna</p>
+                </div>
+                <div class="div2">
                 <img class= "img_div2" src="Assets/oscar.png" alt="Oscar">
                 <p class="prenom_2">Oscar</p>
+                </div>
+                <div class="div3">
                 <img class= "img_div3" src="Assets/max.png" alt="max">
                 <p class="prenom_3">Max</p>
+                </div>
                </div>
         </section>
         <section class="quizimpact">
@@ -186,6 +192,7 @@
                 <img class="temo_img" src="Assets/temo_marseille.png" alt="Marseille">
                 <br>
                 <br>
+                <br>
                 <p class="p_marseille">
                     “Le soutien de Quatre Pattes nous permet de maintenir notre mission de protection des animaux sauvages en détresse.” <br>
                     <br>
@@ -224,6 +231,6 @@
             </li>
         </footer>
     </main>
-<script src=""></script>
+<script src="boutons.js"></script>
 </body>
 </html>

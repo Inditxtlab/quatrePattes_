@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+    /* outline: 1px solid red; */
 }
 
 
@@ -33,10 +34,9 @@ header{
 nav{ 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     gap: 700px;
     color: white;
-    padding-right: 10px;
 }
 .logo{
     display: inline;
@@ -58,7 +58,6 @@ nav{
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    padding: 10px;
     font-size: 16px;
 
 }
@@ -282,19 +281,23 @@ h2{
 .miniatures{
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-content: center;
     gap: 15px;
     padding-top: 22px;
     min-height: 20vh;
 
 }
+.div1, .div2, .div3{
+    position: relative;
+}
 .img_div1, .img_div2, .img_div3{
-    position: relative; 
     border-radius: 10px;
 }
 .prenom_1, .prenom_2, .prenom_3{
     position: absolute;
+    bottom: 50%;
+    left: 50%;
+    color: white;
+    font-weight: bold;
 }
 .quizimpact{
     padding-top: 50px;
@@ -324,6 +327,7 @@ h2{
     font-weight: bold; 
     padding-top: 15px;
     padding-left: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(166, 166, 166, 0.407);
 }
 .reponse{
     margin: 30px;
@@ -345,6 +349,7 @@ h2{
 }
 .titreImpact{
     padding: 10px;
+    margin-top: 10px;
 }
 .impact{
     display: flex;
@@ -365,8 +370,6 @@ h2{
 }
 .temoignages{
     max-height: 684px;
-    margin: 20px;
-
 }
 .titretemo{
     margin: 40px;
@@ -378,7 +381,7 @@ h2{
 .container_Temo{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     gap: 5px;
     color: #67696D;
 }
@@ -449,7 +452,8 @@ textarea{
     margin-bottom: 50px;
 }
 
-/* RESPONSIVE / MEDIA QUERY  */
+/* RESPONSIVE / MEDIA QUERY 
+Responsive home */
 
 @media (max-width:450px){
     body{
@@ -474,4 +478,14 @@ textarea{
     .mission_container{
         flex-direction: column;
     }
+
+/* RESPONSIVE FORMULAIRE 
+formulaire responsive */
+
+.form_container{
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+}
 }
