@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 
@@ -23,33 +23,43 @@ body{
     background-color: var(--bg-color);
     color:var(--text-color);
     font-family: var(--font-family);
-    width: 100%;
+    align-items: center;
+    font-size: 1vw;
+    margin: auto;
+    max-width: 100%;
     display: flex;
+    flex-direction: column;
+}
+#accueil{
+    display: flex;
+    width: 100%;
+    height: auto;
 }
 header{
-    max-height: 60px;
+    height: 9.5vh;
+    width: 100%;
     background-color: var(--terciary-color);
-    color: white; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 nav{ 
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 700px;
+    justify-content:space-between;
+    align-items: center;
+    gap: 48vw;
     color: white;
 }
 .logo{
-    display: inline;
-    height: 60px;
-    width: 263px;
-    gap: 5px;
+    display: block;
     align-items: center;
-    padding-top: 10px;
 
 }
 .home_logo{
     display: inline;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     max-width: 211px;
 }
@@ -57,19 +67,13 @@ nav{
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
-    font-size: 16px;
+    gap: 4vh;
+    font-size: 1.2vw;
 
 }
 .menu a, .menu_footer a, .logo a{
     color: white; 
     text-decoration: none;
-}
-ul{
-    list-style: none;
-    display: inline-flex;
-    gap: 40px;
-    align-items: center;
 }
 .btn_nav{
     background-color: var(--btn-color-don);
@@ -77,83 +81,78 @@ ul{
     border-radius: 10px;
     border: none;
     cursor:pointer;
-    width: 163px;
-    height: 42px;
-    font-size: 16px;
+    width: 13vw;
+    height: 6.6vh;
+    font-size: 1.2vw;
     text-align: center;
 }
 .icon_heart{
-    width: 20px;
-    height: 17px;
-    
+    width: 1.5vw;
+    height: auto;
 }
 .hero{
-    height: 584px;
+    height: 90vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(Assets/image\ huatpage.png);
-   object-fit: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(Assets/image\ huatpage.png) center/cover no-repeat;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
     
 }
 .texte_Accueil{
     position: absolute;
     text-align: center;
-    justify-content: center;
-    height: 168px;
-    width: 902px;
-    top: 40%;
+    height: auto;
+    width: 70vw;
+    top: 43%;
     left: 20%;
 
 }
 h1{
-    font-size: 8.3vh;
+    font-size: 4vw;
     color: white;
     font-weight: bold;
 
 }
-p, li{
-    font-size: 2.6vh;
+p{
+    font-size: 1.2vw;
     font-weight: 400;
 }
 .intro{
-    font-size: 26px;
     color: white;
     font-weight: 400;
 }
 
 .donations{
     display: flex;
-    height: 610px;
+    height: 61vh;
     align-items: center;
 }
 
 h2{
-    font-size: 28px;
+    font-size: 2vw;
     text-align: center;
 }
 
 .container_dons{
     display: flex;
-    justify-content:space-between;
     align-items: center;
     justify-content: center;
     max-height: 392px;
     gap: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     margin-top: 30px;
 
 }
 
 .description_dons{
-    width: 284px;
-    height: 134px;
+    width: 22vw;
+    height: 18vh;
     justify-content: center;
     text-align: center;
     border: 1px solid black;
     border-radius: 10px;
     gap: 10px;
-    padding: 20px;
+    padding: 10px;
 
 }
 .description_dons:hover{
@@ -163,7 +162,7 @@ h2{
 .valeurDon{
     font-weight: bolder;
     color: black;
-    font-size: 30px;
+    font-size: 1.6vw;
 }
 .expli_Don{
     color: #67696D;
@@ -171,17 +170,16 @@ h2{
 .container_btns{
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 30px;
+    gap: 2vw;
+    margin-bottom: 3vw;
 }
 .btns_dons{
-    height: 44px;
-    width: 94px;
+    height: 6vh;
+    width: 7vw;
     background-color: #F3F4F6;
     border: none;
     border-radius: 10px;
     color: var(--footer-color);
-    font-size: 18px;
     text-justify: center;
     font-weight: bold;
     padding: 3px;
@@ -192,26 +190,25 @@ h2{
     background-color: var(--btn-colorOK);
     color: white;
 }
-.container_btn_rouge{
-    margin-left: 240px;
-    display: block;
-    align-items: center;
-    margin-top: 18px;
+
+#btnred{
+    display: flex;
+    justify-content: space-around;
 }
 .btn_don_red{
     background-color: var(--btn-color-don);
     color: white;
-    width: 892px;
-    height: 55px;
+    width: 70vw;
+    height: 6vh;
     margin-bottom: 40px;
-    align-self: center;
+    text-align: center;
 }
 .btn_don_red:hover{
     background-color: #9b1a1b;
 }
 .mission{
     background-color: var(--secondary-color);
-    height: 592px;
+    height: 85vh;
     width: 100%;
 }
 .mission_container{
@@ -227,6 +224,7 @@ h2{
     background-image: url(Assets/Mission.png);
     border-radius: 10% 0% 0% 10%;
     box-shadow: 5px 5px 5px 5px rgba(157, 153, 153, 0.554);
+    background-repeat: no-repeat;
 }
 .titreMission{
     text-align: left;
@@ -248,22 +246,32 @@ h2{
 .histoire{
     align-items: center;
     padding-top: 30px;
-    margin-bottom: 10px;
     height: auto;
+    margin: auto;
 }
 
-.grand_img{
-    margin-top: 20px;
-    width: 1233px;
-    height: 553px;
+.grid_parent{
+    display: grid;
+    grid-template-columns: repeat(6 1fr); 
+    grid-template-rows: repeat(8 1fr);
+    gap: 5px;
+    max-width: 100vw;
+    max-height: 130vh;
+    align-items: center;
+    justify-content:space-between;
+    margin: 20px;
+}
+.div_grand_img{
+    grid-column: 1/6;
+    grid-row: 1/5;
     position: relative;
-   background-image: url(Assets/luna.png);
-   border-radius: 10px;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(Assets/luna.png);
+   border-radius: 10px 10px 10px 10px;
+   background-size: cover;
    object-fit: cover;
    background-repeat: no-repeat;
-   align-self: center;
-   margin-left: 60px;
-
+   height: 90vh;
+   justify-content: center;
 }
 
 .hisLune{
@@ -276,18 +284,25 @@ h2{
 .texte_galerie{
     color: white; 
     font-weight: bolder;
-    font-size: 28px;
+    font-size: 26px;
 }
-.miniatures{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding-top: 22px;
-    min-height: 20vh;
+
+.div_min1, .div_min2, .div_min3{
+    position: relative;
+    height: fit-content;
+}
+.div_min1{
+    grid-column: 1/2;
+    grid-row: 6/8;
+}
+.div_min2{
+    grid-column: 3/4;
+    grid-row: 6/8;
 
 }
-.div1, .div2, .div3{
-    position: relative;
+.div_min3{
+    grid-column: 5/6;
+    grid-row: 6/8;
 }
 .img_div1, .img_div2, .img_div3{
     border-radius: 10px;
@@ -299,6 +314,8 @@ h2{
     color: white;
     font-weight: bold;
 }
+
+/* Style quiz section  */
 .quizimpact{
     padding-top: 50px;
     background-color: var(--secondary-color);
@@ -321,35 +338,34 @@ h2{
     flex-direction: row;
     background-color: var(--bg-color);
     border-radius: 10px;
-    height: 191px;
-    width: 966px;
+    height: 25vh;
+    width: 70vw;
     color:var(--text-color);
     font-weight: bold; 
-    padding-top: 15px;
-    padding-left: 15px;
+    padding-top: 1vh;
+    padding-left: 1vw;
     box-shadow: 5px 5px 5px 5px rgba(166, 166, 166, 0.407);
 }
 .reponse{
-    margin: 30px;
+    margin-top: 30px;
     display: flex;
     gap: 33px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .vrai, .faux{
     background-color:#F3F4F6;
-    font-size: 18px;
     color:var(--footer-color); 
     border-radius: 10px;
-    width: 434px;
-    height: 75px;
+    width: 40%;
+    height: 9vh;
     padding: 5px;
     text-align: center;
 }
 .titreImpact{
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .impact{
     display: flex;
@@ -366,13 +382,14 @@ h2{
 
 .highlight{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 .temoignages{
-    max-height: 684px;
+    height: 450px;
 }
 .titretemo{
     margin: 40px;
+    text-align: center;
 }
 .temo_img{
     box-shadow: 0px 0px 5px 0px rgba(157, 153, 153, 0.554); 
@@ -380,10 +397,11 @@ h2{
 }
 .container_Temo{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 5px;
     color: #67696D;
+    height: 10vh;
+    margin: 20px;
 }
 .p_lyon, .p_marseille, .p_paris{
     box-shadow: 0px 5px 0px 0px rgba(157, 153, 153, 0.554); 
@@ -396,20 +414,21 @@ h2{
     color: black;
 }
 .footer{
-    height: 175px;
+    height: 25vh;
     background-color: var(--footer-color);
     color:var(--text-color);
-    font-size: 22px;
+    font-size: 1.2vw;
     display: flex;
     justify-content: space-around;
-    padding-top: 40px;
+    padding-top: 4vh;
 }
 .menu_footer{
     list-style-type: none;
     color: white;
+    padding: 5px;
 }
 
-/*FORMULAIRE STYLE*/
+/*Page 2 : FORMULAIRE STYLE*/
 
 .error{
     color: var(--btn-color-don);
@@ -417,14 +436,10 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
 }
 .form_container{
-    margin-left: 30%;
-
-
-}
-.formulaire{
-    align-content: center;
-    text-justify: center;
-
+    margin: auto;
+    width: 75%;
+    box-shadow: 5px 5px 5px 5px rgba(166, 166, 166, 0.407);
+    padding: 10px;
 }
 
 #inp1, #inp2, #sujets{
@@ -433,7 +448,7 @@ h2{
     
 }
 label{
-    font-size: 2.6vh;
+    font-size: 2.4vh;
 }
 textarea{
     color:#67696D; 
@@ -442,6 +457,7 @@ textarea{
     
 }
 #btnenvoyer{
+    display: inline;
     background-color: var(--btn-colorOK);
     color: white;
     font-weight: bold;
@@ -459,33 +475,216 @@ Responsive home */
     body{
         display: flex; 
         flex-direction: column;
-        width: auto;
+        margin: auto;
+        max-width: 450px;
+    }
+    #accueil{
+        flex-direction: column;
+    }
+    header {
+        min-height: fit-content;
+        flex-direction: column;
+        justify-content: left;
     }
     nav{
         flex-direction: column;
-        gap: 0;
+        justify-content: left;
+        gap:0;
     }
+    .logo{
+        gap: 0;
+        margin-top: 5px;
+
+    }
+
     .home_logo{
-        display:none
+        font-size: 14px;
     }
     .menu{
-        display:flex; 
         flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        font-family: 1.9vh;
+        gap: 10px;
+        font-size: 12px;
     }
+    .btn_nav{
+        height: 20px;
+        min-width: 230px;
+        width: 70%;
+        margin: 10px;
+        font-size: 12px;
+    }
+    .icon_heart{
+        width: 13px;
+        height: auto;
+    }
+    .hero{
+        height: 50vh;
+        background-size:50%;
+        background-position: center;
+        margin-bottom: 3vh;
+    }
+    .texte_Accueil{
+        width:fit-content;
+        height: auto;
+        top: 50%;
+        left: 40%;
+    }
+    h1{
+        font-size: 22px;
+    }
+    p{font-size: 12px;}
+
+    .donations{
+    flex-direction: column;
+    }
+    h2{
+    font-size: 16px;
+    }
+    .container_dons{
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: 5px 5px 5px 5px rgba(166, 166, 166, 0.407);
+    }
+    .description_dons{
+        min-width: 75vw;
+        height: 10vh;
+    }
+    .valeurDon{
+        font-size: 14px;
+    }
+    .expli_Don{
+        font-size: 10px;
+    }
+    .btns_dons{
+        width: 18vw;
+        height: 4vh;
+        font-size: 12px;
+    }
+    .container_btn_rouge{
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+    .btn_don_red{
+        width: 80%;
+        max-width: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .mission{
+        height: 120vh;
+        margin: 10px;
+    }
+
     .mission_container{
         flex-direction: column;
     }
+    .imgcontain{
+        margin: auto;
+        height: 213px;
+        width: 316px;
+        background-size: cover;
+        border-radius: 0%;
+        box-shadow: 5px 5px 5px 5px rgba(157, 153, 153, 0.554);
+    }
+    .texte_mission{
+        margin: 0;
+        height: 248px;
+        width: 316px;
+        border-radius: 0%;
+        line-height: normal;
+        font-size: 10px;
+        padding: 5px;
+    }
+    .grid_parent{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 20px;
+        margin: auto;
+    
+    }
+    .div_grand_img{
+        width: 400px;
+        height: 380px;
+        object-fit:contain;
+        border-radius: 16px;
+        display: block;
+    }
+    .hisLune{
+        bottom: 0%;
+        width: 80%;
+        bottom: 10px;
+    }
+    .texte_galerie{
+        font-size: 12px;
+    }
+    .div_min1, .div_min2, .div_min3{
+        display: flex;
+        justify-content:center;
+        gap: 5px;
+        object-fit:contain;
+    }
+.img_div1, .img_div2, .img_div3{
+    width: 120px; 
+    height: 78px;
+    object-fit: cover;
+}
 
+/* Responsive quiz */
+.quiz{
+    gap: 5px;
+}
+.question{
+    flex-direction: column;
+    max-width: 90%;
+    font-size: 12px;
+}
+
+.reponse{
+    flex-direction: column;
+}
+.vrai, .faux{
+    width: 95%;
+}
+.faux{
+    display: none
+}
+.impact{
+    flex-direction: column;
+}
+.highlight{
+    font-size: 12px;
+
+}
+.temoignages{
+    margin-top: auto;
+    flex-direction: column;
+    height: 130vh;
+    margin-top: 30px;
+}
+.container_Temo{
+    flex-direction: column;
+    height: 50vh;
+}
+.footer{
+    font-size: 10px;
+    justify-content: center;
+}
+.menu_footer{
+    margin: 10px;
+    font-size: 10px;
+}
 /* RESPONSIVE FORMULAIRE 
 formulaire responsive */
 
 .form_container{
     display: flex;
-
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#inp1, #inp2, #sujets, #textarea, #btnenvoyer{
+    width: 300px;
 }
 }

@@ -12,7 +12,8 @@
 </head>
 <body>
     <main>
-        <header>
+        <section id="accueil">
+            <header>
                 <nav>
                     <div class="logo">
                         <a href="home.html">
@@ -21,22 +22,14 @@
                     </a>
                     </div>
                     <div class="menu">
-                    <ul>
-                        <li><a href="home.html">Accueil</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li>
-                            <a href="#Donations"><button class="btn_nav"> <img class="icon_heart"src="Assets/Icons/logo_coeur.png"> Faire un don</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                        <a href="home.html">Accueil</a>
+                        <a href="contact.html">Contact</a>
+                        <button class="btn_nav"> <img class="icon_heart"src="Assets/Icons/logo_coeur.png"> Faire un don</button>   
+                    </div>
                 </nav>
-        </header>
-        <br>
-        <section class="contact">
-            <br>
+            </header>
+        </section>
             <h2>Contacte nous</h2>
-            <br>
             <div class="form_container">
         <form id=formulaire>
             <label for="Nom">Nom : </label>
@@ -72,17 +65,22 @@
             <input id="btnenvoyer" type="submit" value="Envoyer">
         </form>
         </div>
-    </section>
-<footer class="footer">
-                <li class="menu_footer"><a href="#">Quatre Pattes</a>
-                    <p>Ensemble, protégeons les animaux et donnons-leur  une vie meilleure</p>
-                </li>
-                <li class="menu_footer">Contact
-                    <address> <img src="Assets/Icons/logo_mail.png" alt="e-mail">contact@quatrepattes.org</address>
-                </li>
-                <li class="menu_footer">
-                <a href="">Suive-moi</a>
-            </li>
+    <footer class="footer">
+        <li class="menu_footer"><a href="#">Quatre Pattes</a>
+            <br>
+            <br>
+            <p>Ensemble, protégeons les animaux et donnons-leur  une vie meilleure</p>
+        </li> 
+        <li class="menu_footer">Contact
+            <address>
+                <br>
+                <img src="Assets/Icons/logo_mail.png" alt="e-mail">
+                 contact@quatrepattes.org
+            </address>
+        </li>
+        <li class="menu_footer">
+        <a href="">Suive-moi</a>
+    </li>
 </footer>
 </main>
 <script src="formulaire.js"></script>

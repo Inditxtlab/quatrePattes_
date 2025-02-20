@@ -8,8 +8,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <main>
@@ -24,13 +23,10 @@
                     </a>
                     </div>
                     <div class="menu">
-                    <ul>
-                        <li><a href="home.html">Accueil</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li> <button class="btn_nav"> <img class="icon_heart"src="Assets/Icons/logo_coeur.png"> Faire un don</button>
-                        </li>
-                    </ul>
-                </div>
+                        <a href="home.html">Accueil</a>
+                        <a href="contact.html">Contact</a>
+                        <button class="btn_nav"> <img class="icon_heart"src="Assets/Icons/logo_coeur.png"> Faire un don</button>   
+                    </div>
                 </nav>
             </header>
         </section>
@@ -64,10 +60,9 @@
                     <button id="btn3" class="btns_dons">Annuel
                     </button>
                 </div>
-                <div id="btnaffichage" class="container_btn_rouge">
+                <div id="btnred">
                     <button class="btns_dons btn_don_red"><img class="icon_heart" src="Assets/Icons/logo_coeur.png"> Faire un don de <span id="montant">50€</span>/ <span id="frequence">mois</span></button>
                 </div>
-            </div>
         </section>
         <section class="mission">
             <div class="mission_container">
@@ -79,41 +74,40 @@
                 <p class="p_mission">Depuis 2010, Quatre Pattes œuvre sans relâche pour la protection et le bien etre des animaux en France.  Notre mission est double: secourir les animaux en détresse et sensibiliser le public à la cause animale. 
                     <br>
                     <br>
-                    <br>
                     Chaque année, nous prenons en charge plus de 1000 animaux abandonnés, maltraités ou blessés. Grâce à notre réseau de familles d’accueil et nos partenariats avec des refuges, nous leur offrons une seconde chance. 
-                    <br>
                     <br>
                     <br>
                     Votre soutien est essentiel pour continuer notre mission. Ensemble, nous pouvons faire la différence pour ces êtres aui comptent sur nous</p>
             </div>
             </div>
         </section>
+
+        <!-- SECTION 4 - Histoire de reussite. Grid -->
         <section class="histoire">
             <h2>Histoire de Réussite</h2>
-            <div class="grand_img">
-                <div class="hisLune">
-                <p>
+            <div class="grid_parent">
+                <div class="div_grand_img">
+                <p class="hisLune">
                     <span class="texte_galerie">Luna </span>
                     <br>
                     <br>
             Trouvée dans la rue avec une patte cassée, Luna a été soignée et retrouvé sa joie de vivre. Elle coule maintenant  des jours heureux dans sa nouvelle famille.</p>
                 </div>
-            </div>
-            <div class="miniatures">
-                <div class="div1">
+                <div class="div_min1">
                 <img  class= "img_div1" src="Assets/miniluna.png" alt="luna">
                 <p class="prenom_1">Luna</p>
                 </div>
-                <div class="div2">
+                <div class="div_min2">
                 <img class= "img_div2" src="Assets/oscar.png" alt="Oscar">
                 <p class="prenom_2">Oscar</p>
                 </div>
-                <div class="div3">
+                <div class="div_min3">
                 <img class= "img_div3" src="Assets/max.png" alt="max">
                 <p class="prenom_3">Max</p>
                 </div>
-               </div>
+            </div>
         </section>
+        <!-- SECTION 5 - Quiz . Flex box  -->
         <section class="quizimpact">
             <h2>Testez Vos Connaissances</h2>
             <div class="quiz">
@@ -180,29 +174,27 @@
             <div class="container_Temo">
             <div>
                 <img class="temo_img" src="Assets/temo_lyon.png" alt="lyon">
-                <br>
-                <br>
+                <div>
                 <p class="p_lyon">“Grâce aux dons, nous avons pu accueillir plus de 200 animaux cette année et leur offrir une seconde chance.” <br>
                     <br>
                     <br>
                 <span class="refuge">Refuge des Quatre Pattes - Lyon</span>
                 </p>
             </div>
+            </div>
             <div>
                 <img class="temo_img" src="Assets/temo_marseille.png" alt="Marseille">
-                <br>
-                <br>
-                <br>
+            <div>
                 <p class="p_marseille">
                     “Le soutien de Quatre Pattes nous permet de maintenir notre mission de protection des animaux sauvages en détresse.” <br>
                     <br>
                     <span class="refuge">Sanctuaire Animal - Marseille</span>
                 </p>
             </div>
+            </div>
             <div>
                 <img class="temo_img" src="Assets/temo_paris.png" alt="Paris">
-                <br>
-                <br>
+                <div>
                 <p class="p_paris">
                     “Chaque don compte et nous aide à offrir un avenir meilleur aux animaux abandonnés.”
                     <br>
@@ -211,19 +203,19 @@
                     <span class="refuge">Refuge du Soléil - Paris</span>
                 </p>
             </div>
+            </div>
         </div>
         </section>
         <footer class="footer">
-                <li class="menu_footer"><a href="#">Quatre Pattes</a>
+                <li class="menu_footer"><a href="#accueil">Quatre Pattes</a>
                     <br>
                     <br>
                     <p>Ensemble, protégeons les animaux et donnons-leur  une vie meilleure</p>
-                </li>
+                </li> 
                 <li class="menu_footer">Contact
                     <address>
-                        <br>
                         <img src="Assets/Icons/logo_mail.png" alt="e-mail">
-                         contact@quatrepattes.org
+                        <p> contact@quatrepattes.org</p>
                     </address>
                 </li>
                 <li class="menu_footer">
