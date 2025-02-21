@@ -47,3 +47,6 @@ if (Valid){
     alert("Votre message a été envoyer!")
 }
 }
+
+
+//GALERIE INTRACTIF / / 

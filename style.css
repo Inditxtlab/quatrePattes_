@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    outline: 1px solid red;
 }
 
 
@@ -254,24 +253,27 @@ h2{
     display: grid;
     grid-template-columns: repeat(6 1fr); 
     grid-template-rows: repeat(8 1fr);
-    gap: 5px;
+    gap: 10px;
     max-width: 100vw;
-    max-height: 130vh;
+    max-height: 140vh;
+    align-items:var(--btn-color);
     align-items: center;
-    justify-content:space-between;
+    justify-content: center;
     margin: 20px;
 }
-.div_grand_img{
+#div_grand_{
     grid-column: 1/6;
     grid-row: 1/5;
     position: relative;
-   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(Assets/luna.png);
-   border-radius: 10px 10px 10px 10px;
-   background-size: cover;
-   object-fit: cover;
-   background-repeat: no-repeat;
-   height: 90vh;
-   justify-content: center;
+    max-height: fit-content;
+}
+
+#bigimg{
+    border-radius: 10px;
+    align-content: center;
+    justify-content:space-between;
+    width: 100%;
+    height: fit-content;
 }
 
 .hisLune{
@@ -290,6 +292,7 @@ h2{
 .div_min1, .div_min2, .div_min3{
     position: relative;
     height: fit-content;
+    cursor: pointer;
 }
 .div_min1{
     grid-column: 1/2;

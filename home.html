@@ -61,7 +61,7 @@
                     </button>
                 </div>
                 <div id="btnred">
-                    <button class="btns_dons btn_don_red"><img class="icon_heart" src="Assets/Icons/logo_coeur.png"> Faire un don de <span id="montant">50€</span>/ <span id="frequence">mois</span></button>
+                    <button id=donnow class="btns_dons btn_don_red"><img class="icon_heart" src="Assets/Icons/logo_coeur.png"> Faire un don de <span id="montant">50€</span>/ <span id="frequence">mois</span></button>
                 </div>
         </section>
         <section class="mission">
@@ -86,23 +86,24 @@
         <section class="histoire">
             <h2>Histoire de Réussite</h2>
             <div class="grid_parent">
-                <div class="div_grand_img">
-                <p class="hisLune">
+                <div id="div_grand_">
+                    <img id="bigimg" src="Assets/luna.png" alt="luna">
+                <p id=lune class="hisLune">
                     <span class="texte_galerie">Luna </span>
                     <br>
                     <br>
             Trouvée dans la rue avec une patte cassée, Luna a été soignée et retrouvé sa joie de vivre. Elle coule maintenant  des jours heureux dans sa nouvelle famille.</p>
                 </div>
                 <div class="div_min1">
-                <img  class= "img_div1" src="Assets/miniluna.png" alt="luna">
+                <img id="imgL" class="img_div1" src="Assets/miniluna.png" alt="luna">
                 <p class="prenom_1">Luna</p>
                 </div>
                 <div class="div_min2">
-                <img class= "img_div2" src="Assets/oscar.png" alt="Oscar">
+                <img id="imgO" class= "img_div2" src="Assets/oscar.png" alt="Oscar">
                 <p class="prenom_2">Oscar</p>
                 </div>
                 <div class="div_min3">
-                <img class= "img_div3" src="Assets/max.png" alt="max">
+                <img id="imgM" class= "img_div3" src="Assets/max.png" alt="max">
                 <p class="prenom_3">Max</p>
                 </div>
             </div>
@@ -223,6 +224,7 @@
             </li>
         </footer>
     </main>
+<script src="galerie.js"></script>
 <script src="boutons.js"></script>
 </body>
 </html>
