@@ -274,6 +274,7 @@ h2{
     justify-content:space-between;
     width: 100%;
     height: fit-content;
+    filter:brightness(50%);
 }
 
 .hisLune{
@@ -309,7 +310,13 @@ h2{
 }
 .img_div1, .img_div2, .img_div3{
     border-radius: 10px;
+    filter:brightness(50%);
 }
+.img_div1:active, .img_div2:active, .img_div3:active{
+    border: 3px solid #0CB981;
+    filter:brightness(100%)
+}
+
 .prenom_1, .prenom_2, .prenom_3{
     position: absolute;
     bottom: 50%;
@@ -606,7 +613,7 @@ Responsive home */
         margin: auto;
     
     }
-    .div_grand_img{
+    .div_grand_{
         width: 400px;
         height: 380px;
         object-fit:contain;
