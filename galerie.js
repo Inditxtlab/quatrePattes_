@@ -1,5 +1,5 @@
 // //GALERIE INTERACTIF//
-// Ici j'ai d'abord accede au DOM et recupere les elements à utilise dans ma function par le ID. j'ai utilise la methode .getAttribute pour recupere la valeur de la source et apres j'ai stocke ces valeurs en variables que j'ai utilise dans les function fleche pour creer un evenement au clicke sur les images miniatures. 
+// Dans cette section, j'accède d'abord au DOM et récupère les éléments nécessaires en utilisant leur ID. J'utilise la méthode .getAttribute pour obtenir la valeur de la source, puis je stocke ces valeurs dans des variables. Ces variables sont ensuite utilisées dans des fonctions fléchées pour créer un événement au clic sur les images miniatures.
 
 //getAttribute et creation de variables : 
 
@@ -13,6 +13,7 @@ let max=document.getElementById("imgM").getAttribute('src');
 // Evenements, setAttribute et function : 
 document.getElementById("imgL").addEventListener("click",()=>{
     changeImg(luna)
+    document.getElementById("lune").innerHTML= "<p><span class='texte_galerie'>Luna </span><br><br>Trouvée dans la rue avec une patte cassée, Luna a été soignée et retrouvé sa joie de vivre. Elle coule maintenant  des jours heureux dans sa nouvelle famille.</p>"
 
 })
 

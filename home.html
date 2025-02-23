@@ -25,7 +25,9 @@
                     <div class="menu">
                         <a href="home.html">Accueil</a>
                         <a href="contact.html">Contact</a>
-                        <button class="btn_nav"> <img class="icon_heart"src="Assets/Icons/logo_coeur.png"> Faire un don</button>   
+                        <a href="#Donations" class="btn_nav">
+                            <img class="icon_heart"src="Assets/Icons/logo_coeur.png"> Faire un don   
+                        </a>
                     </div>
                 </nav>
             </header>
@@ -38,7 +40,7 @@
     </section>
         <section id="Donations">
             <h2>Faites un don</h2>
-            <div class="container_dons">
+            <div id="donations" class="container_dons">
                 <div id="don10" class="description_dons">
                     <p> <span class="valeurDon">10€</span><br>
                     <span class="expli_Don">permet de nourrir 5 animaux pendant  une journée</span></p>
@@ -47,12 +49,12 @@
                 ><p><span class="valeurDon">20€ </span><br>
                 <span class="expli_Don">permet d’héberger un animal sauvage pendant une nuit</span></p>
                 </div>
-                <div id="don30"  class="description_dons" >
+                <div id="don50"  class="description_dons" >
                     <p><span class="valeurDon">50€</span><br>
                     <span class="expli_Don">permet de financer les soins vétérinaires complets pour un animal</span></p>
                 </div>
             </div>
-                <div class="container_btns">
+                <div id="btns_frequency" class="container_btns">
                     <button id="btn1" class="btns_dons">Une fois
                     </button>
                     <button id="btn2" class="btns_dons">Mensuel
@@ -61,7 +63,7 @@
                     </button>
                 </div>
                 <div id="btnred">
-                    <button id=donnow class="btns_dons btn_don_red"><img class="icon_heart" src="Assets/Icons/logo_coeur.png"> Faire un don de <span id="montant">50€</span>/ <span id="frequence">mois</span></button>
+                    <button id=donnow class="btns_dons btn_don_red"><img class="icon_heart" src="Assets/Icons/logo_coeur.png"> Faire un don <span id="montant"></span><span id="frequence"></span></button>
                 </div>
         </section>
         <section class="mission">
@@ -87,7 +89,7 @@
             <h2>Histoire de Réussite</h2>
             <div class="grid_parent">
                 <div id="div_grand_">
-                    <img id="bigimg" src="Assets/miniluna.png" alt="luna">
+                    <img id="bigimg" src="Assets/luna.png" alt="luna">
                 <p id=lune class="hisLune">
                     <span class="texte_galerie">Luna </span>
                     <br>
@@ -115,11 +117,11 @@
                 <div class="question">
                     <p class="quizquestion">Les associations gardent la majorité des dons pour leur fonctionnement</p>
                     <div class="reponse">
-                        <div class="vrai">
-                        <p>Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement
+                        <div id="vrai"class="vrai">
+                        <p>Vrai
                         </p>
                         </div>
-                    <div class="faux">
+                    <div id="faux" class="faux">
                         <p>Faux</p>
                     </div>
                 </div>
@@ -127,10 +129,10 @@
             <div class="question">
                 <p class="quizquestion"></p>Les refuges prennent que les animaux en bonne santé</p>
                 <div class="reponse">
-                    <div class="vrai">
-                        <p>Vrai, ils refusent les animaux malades car c’est trop coûteux</p>
+                    <div id="vrai" class="vrai">
+                        <p>Vrai</p>
                     </div>
-                    <div class="faux">
+                    <div id="faux" class="faux">
                         <p>Faux</p>
                     </div>
                 </div>
@@ -138,10 +140,10 @@
             <div class="question">
                 <p class="quizquestion"></p>Les associations ont trop de moyens grâce aux dons</p>
                 <div class="reponse">
-                    <div class="vrai">
-                        <p>Vrai, elles reçoivent  beaucoup d’argent des donateurs</p>
+                    <div id="vrai" class="vrai">
+                        <p>Vrai</p>
                     </div>
-                    <div class="faux">
+                    <div id="faux" class="faux">
                         <p>Faux</p>
                     </div>
                 </div>
@@ -226,5 +228,6 @@
     </main>
 <script src="galerie.js"></script>
 <script src="boutons.js"></script>
+<script src="quiz.js"></script>
 </body>
 </html>

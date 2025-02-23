@@ -84,17 +84,19 @@ nav{
     height: 6.6vh;
     font-size: 1.2vw;
     text-align: center;
+    padding-top: 5px;
 }
 .icon_heart{
     width: 1.5vw;
     height: auto;
 }
 .hero{
-    height: 90vh;
+    height: 88vh;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(Assets/image\ huatpage.png) center/cover no-repeat;
     position: relative;
     margin-bottom: 2vh;
+    box-shadow: 5px 5px 5px 5px rgba(166, 166, 166, 0.407);
     
 }
 .texte_Accueil{
@@ -113,7 +115,7 @@ h1{
 
 }
 p{
-    font-size: 1.2vw;
+    font-size: 14px;
     font-weight: 400;
 }
 .intro{
@@ -369,10 +371,23 @@ h2{
     color:var(--footer-color); 
     border-radius: 10px;
     width: 40%;
-    height: 9vh;
+    height: 10vh;
     padding: 5px;
     text-align: center;
 }
+
+.rouge{
+    background-color:#e08686;
+    color:var(--footer-color); 
+    border-color: #DB2728;
+}
+
+.vert{
+    background-color:#bad49e;
+    color:var(--footer-color); 
+    border-color:#0CB981;
+}
+
 .titreImpact{
     padding: 10px;
     margin-top: 15px;
@@ -527,8 +542,8 @@ Responsive home */
         height: auto;
     }
     .hero{
-        height: 50vh;
-        background-size:50%;
+        height: 40vh;
+        background-size:100%;
         background-position: center;
         margin-bottom: 3vh;
     }
@@ -536,7 +551,7 @@ Responsive home */
         width:fit-content;
         height: auto;
         top: 50%;
-        left: 40%;
+        left: 25%;
     }
     h1{
         font-size: 22px;
