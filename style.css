@@ -36,7 +36,7 @@ body{
 }
 header{
     height: 9.5vh;
-    width: 100%;
+    width: 100vw ;
     background-color: var(--terciary-color);
     color: white;
     display: flex;

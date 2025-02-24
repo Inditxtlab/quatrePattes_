@@ -6,9 +6,9 @@ questions.forEach((element, index)=>{
 })
 
     
-let faux=document.querySelectorAll("#faux");
+let faux=document.querySelectorAll(".faux");
 console.log(faux);
-let vrai=document.querySelectorAll("#vrai");
+let vrai=document.querySelectorAll(".vrai");
 console.log(vrai);
 
 let score=0
@@ -40,14 +40,13 @@ faux.forEach((element, index) => {
     if (score<3){
         score++
     }
-    if(reponse.length===2){
-        alert(`Fin du quiz! Votre score final est : ${score} sur ${totalquestions} `)
-    }
     bloquereponse(faux, vrai)
 
-    alert(`${bonnesreponses[index]} Votre score: ${score}`)
-        }); 
-    })
+    if(reponse.length===questions.length-1){
+        alert(`Fin du quiz! Votre score final est : ${score} sur ${totalquestions} `)
+}})
+})
+
 
 vrai.forEach((element, index) => {
         element.addEventListener("click", ()=>{
@@ -60,19 +59,15 @@ vrai.forEach((element, index) => {
         if(score>0 ){
             score--
         }
-        if(reponse.length===2){
+        bloquereponse(faux, vrai)
+        if(reponse.length===questions.length-1){
             alert(`Fin du quiz! Votre score final est : ${score} sur ${totalquestions} `)
         }
-
-
-            alert(`${messageKO[index]} Votre score: ${score}`)
-            
-        })
     })
+})
 
 
 function bloquereponse (faux, vrai){
     faux.disabled=true
     vrai.disabled=true
 }
-
