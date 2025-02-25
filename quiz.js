@@ -13,7 +13,7 @@ console.log(vrai);
 
 let score=0
 let reponse=[]
-totalquestions=questions.length
+let totalquestions=questions.length
 let bonnesreponses=[
     "Bonne réponse : Faux ! Chez Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15% servent aux frais de fonctionnement essentiels.",
     "Bonne réponse :Faux ! Nous accueillons tous les animaux, quel que soit leur état de santé",
@@ -31,6 +31,7 @@ let bonnesreponses=[
         "Faux ! Les besoins sont immenses et constants. Chaque don est précieux pour sauver plus d'animaux."
     ]
 
+
 faux.forEach((element, index) => {
     element.addEventListener("click", ()=>{
         if(!reponse.includes(index))
@@ -42,7 +43,7 @@ faux.forEach((element, index) => {
     }
     bloquereponse(faux, vrai)
 
-    if(reponse.length===questions.length-1){
+    if(reponse.length===questions.length){
         alert(`Fin du quiz! Votre score final est : ${score} sur ${totalquestions} `)
 }})
 })
@@ -60,7 +61,7 @@ vrai.forEach((element, index) => {
             score--
         }
         bloquereponse(faux, vrai)
-        if(reponse.length===questions.length-1){
+        if(reponse.length===questions.length){
             alert(`Fin du quiz! Votre score final est : ${score} sur ${totalquestions} `)
         }
     })
