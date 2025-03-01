@@ -1,19 +1,9 @@
 let questions=document.querySelectorAll(".question");
-console.log(questions);
-questions.forEach((element, index)=>{
-    let bonne=element.querySelector(".faux")
-    let mauvaise=element.querySelector(".vrai")
-})
-
-    
-let faux=document.querySelectorAll(".faux");
-console.log(faux);
-let vrai=document.querySelectorAll(".vrai");
-console.log(vrai);
+console.log(questions)
 
 let score=0
 let reponse=[]
-let totalquestions=questions.length
+let totalquestions=0
 let bonnesreponses=[
     "Bonne réponse : Faux ! Chez Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15% servent aux frais de fonctionnement essentiels.",
     "Bonne réponse :Faux ! Nous accueillons tous les animaux, quel que soit leur état de santé",
@@ -31,44 +21,61 @@ let bonnesreponses=[
         "Faux ! Les besoins sont immenses et constants. Chaque don est précieux pour sauver plus d'animaux."
     ]
 
+    let btnsolution=document.getElementById("quizsolution")
+    function reinicie(){
+        score=0
+        reponse=[]
 
-faux.forEach((element, index) => {
-    element.addEventListener("click", ()=>{
-        if(!reponse.includes(index))
-            reponse.push(index)
-        element.classList.add("vert")
-        element.innerHTML=bonnesreponses[index]
-    if (score<3){
-        score++
-    }
-    bloquereponse(faux, vrai)
-
-    if(reponse.length===questions.length){
-        alert(`Fin du quiz! Votre score final est : ${score} sur ${totalquestions} `)
-}})
-})
-
-
-vrai.forEach((element, index) => {
-        element.addEventListener("click", ()=>{
-            if(!reponse.includes(index)){
-                reponse.push[index];
-                element.classList.add("rouge");
-            element.textContent=mauvaisesreponses[index]
-
-}
-        if(score>0 ){
-            score--
-        }
-        bloquereponse(faux, vrai)
-        if(reponse.length===questions.length){
-            alert(`Fin du quiz! Votre score final est : ${score} sur ${totalquestions} `)
-        }
+    questions.forEach((element)=>{
+        let faux=element.querySelector(".faux")
+        let vrai=element.querySelector(".vrai")
+        faux.classList.remove("vert")
+        vrai.classList.remove("rouge")
+        faux.disabled=false
+        vrai.disabled=false
+        faux.innerHTML="Faux"
+        vrai.innerHTML="Vrai"
+        btnsolution.classList.remove("btn_don_red")
+        btnsolution.innerHTML=""
     })
+}
+
+questions.forEach((element, index)=>{
+    let faux=element.querySelector(".faux")
+    let vrai=element.querySelector(".vrai")
+
+faux.addEventListener("click", ()=>{
+    choix_Reponse(index, faux, vrai, true)
 })
 
+vrai.addEventListener("click",()=>{
+    choix_Reponse(index, faux, vrai, false)
+})
+})
 
-function bloquereponse (faux, vrai){
-    faux.disabled=true
-    vrai.disabled=true
-}
+function choix_Reponse(index, faux, vrai, isFaux){
+        if(!reponse.includes(index)){
+            reponse.push(index)
+        }
+        if(isFaux){
+        faux.classList.add("vert")
+        faux.innerHTML=bonnesreponses[index]
+        score++
+    }else{
+        vrai.classList.add("rouge");
+            vrai.textContent=mauvaisesreponses[index]
+            score = Math.max(0, score - 1)
+        }
+
+        if(reponse.length===questions.length){
+            let btnsolution=document.getElementById("quizsolution")
+            btnsolution.classList.add("btn_don_red")
+            btnsolution.innerHTML=`Fin du quiz! Votre score final est : ${score}  sur ${totalquestions}`
+        
+        }  
+    }
+
+
+document.getElementById("quizsolution").addEventListener("click",()=>{
+    reinicie()
+})
